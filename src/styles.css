@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+/*    * LAYOUT *   */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+#main-wrapper{
+    background-color: #F6C4C7;
+}
+
+/* 
+    HEADER
+*/
+
+.custom-navbar{
+    background-color: #FFDBDA;
+    border-bottom: 3px solid #604D53;
+}
+
+.header-text{
+    
+}
+
