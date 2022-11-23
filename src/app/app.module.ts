@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LayoutModule } from './layout/layout.module';
+import { KeyboardTestModule } from './keyboard-test/keyboard-test.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { LayoutModule } from './layout/layout.module';
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     NgbModule,
-    LayoutModule
+    LayoutModule,
+    KeyboardTestModule
   ],
   providers: [],
   bootstrap: [AppComponent]

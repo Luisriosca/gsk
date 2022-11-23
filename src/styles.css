@@ -10,16 +10,15 @@
     background-color: #F6C4C7;
 }
 
+.text-w{
+    color: #F4F3EA;
+}
+
 /* 
     HEADER
 */
 
 .custom-navbar{
-    background-color: #FFDBDA;
-    border-bottom: 3px solid #604D53;
+    background-color: #333D51;
+    border-bottom: 3px solid #D3AC2B;
 }
-
-.header-text{
-    
-}
-
