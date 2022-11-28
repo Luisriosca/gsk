@@ -1,18 +1,27 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
-import { nextTick } from 'process';
+import { Component, ElementRef, OnDestroy, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 import { fromEvent, map } from 'rxjs';
-
+import { WindowService } from '../../../services/window/window.service'
 @Component({
   selector: 'app-keypressed-indicator',
   templateUrl: './keypressed-indicator.component.html',
   styleUrls: ['./keypressed-indicator.component.css']
 })
-export class KeypressedIndicatorComponent implements OnInit, OnDestroy {
+export class KeypressedIndicatorComponent implements OnInit, OnDestroy, AfterViewInit {
   keyPressed: string = 'Escribe';
-  constructor() { }
+  window: any;
+  constructor(private winmodule: WindowService) { }
 
   ngOnInit(): void {
-    const keyDown = fromEvent(document, 'keydown');
+    
+  }
+
+  ngOnDestroy(){
+    
+  }
+
+  ngAfterViewInit(): void {
+    this.window = this.getWindow();
+    const keyDown = fromEvent(this.window, 'keydown');
     const observadorKeyboard =  {
       next: (event:any) => {
           this.keyPressed = event.key;
@@ -23,8 +32,8 @@ export class KeypressedIndicatorComponent implements OnInit, OnDestroy {
     }
     keyDown.subscribe(observadorKeyboard);
   }
-
-  ngOnDestroy(){
-    
+  
+  getWindow(){
+    return this.winmodule.getWindow();
   }
 }

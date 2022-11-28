@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LayoutModule } from './layout/layout.module';
 import { KeyboardTestModule } from './keyboard-test/keyboard-test.module';
+import { DirectivesDirective } from './directives/directives.directive';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { KeyboardTestModule } from './keyboard-test/keyboard-test.module';
     AppRoutingModule,
     NgbModule,
     LayoutModule,
-    KeyboardTestModule
+    KeyboardTestModule,
+    DirectivesDirective
   ],
   providers: [],
   bootstrap: [AppComponent]
