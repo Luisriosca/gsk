@@ -6,9 +6,9 @@
     font-family: 'Raleway', sans-serif;
 }
 
-#main-wrapper{
+/* #main-wrapper{
     background-color: #F6C4C7;
-}
+} */
 
 .text-w{
     color: #F4F3EA;
@@ -21,4 +21,36 @@
 .custom-navbar{
     background-color: #333D51;
     border-bottom: 3px solid #D3AC2B;
+}
+
+
+/* 
+
+    *Mechanography test app
+
+*/
+
+.key-indicator-btn{
+    width: 10rem;
+    height: 10rem;
+    border: solid 3px #D3AC2B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 2.3rem;
+    color: #333D51;
+    font-weight: bold;
+}
+
+.key-indicator-btn:hover{
+    color: #333D51;
+    border: solid 3px #D3AC2Baa;
+}
+
+.text-to-follow{
+    font-size: 1.6rem;
+    background-color: yellow;
+    height: 10vh;
+    overflow-y: hidden;
 }

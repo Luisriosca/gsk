@@ -13,7 +13,6 @@ export class KeypressedIndicatorComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     const keyDown = fromEvent(document, 'keydown');
-    // const keyPressed = keyDown.pipe(map(e => e.key))
     const observadorKeyboard =  {
       next: (event:any) => {
           this.keyPressed = event.key;
